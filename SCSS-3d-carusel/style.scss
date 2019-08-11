@@ -1,0 +1,62 @@
+$color-dark: #333;
+$w:500px;
+$h:300px;
+body{
+    background-color: $color-dark;
+    font-family: 'Open Sans', sans-serif;
+    perspective: 500px;
+    height: 100vh;
+}
+
+#carusel{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: slateblue;
+    transform: rotateX(70deg);  
+     perspective: 500px;
+    
+    figure{
+        @for $n from 1 through 5{
+               &:nth-child(#{$n}){
+               transform: rotateX(-45deg) rotateY($n * 72deg) scaleY(3);
+               .reflection{
+                 background-image: url(../SCSS-3d-carusel/img/sl#{$n}.jpg);
+                 &::before{
+                     content: "";
+                     display: block;
+                     width: $w;
+                     height: $h;
+                     background-image: linear-gradient(black ,transparent);
+                 }
+
+
+               }
+               }
+    }
+    transform-origin: left;
+        position: absolute;
+        perspective: 500px;
+       img{
+           transform: rotateY(70deg);
+       }
+       
+        .reflection{
+           width: $w;
+           height: $h;
+           
+           transform: rotateY(70deg) scaleY(-1);
+        }
+       
+        h2{
+            display: none;
+        }
+
+      }
+}
+

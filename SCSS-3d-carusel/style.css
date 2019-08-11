@@ -1,0 +1,138 @@
+body {
+  background-color: #333;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  height: 100vh;
+}
+
+#carusel {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-color: slateblue;
+  -webkit-transform: rotateX(70deg);
+          transform: rotateX(70deg);
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+
+#carusel figure {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  position: absolute;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+
+#carusel figure:nth-child(1) {
+  -webkit-transform: rotateX(-45deg) rotateY(72deg) scaleY(3);
+          transform: rotateX(-45deg) rotateY(72deg) scaleY(3);
+}
+
+#carusel figure:nth-child(1) .reflection {
+  background-image: url(../SCSS-3d-carusel/img/sl1.jpg);
+}
+
+#carusel figure:nth-child(1) .reflection::before {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  background-image: linear-gradient(black, transparent);
+}
+
+#carusel figure:nth-child(2) {
+  -webkit-transform: rotateX(-45deg) rotateY(144deg) scaleY(3);
+          transform: rotateX(-45deg) rotateY(144deg) scaleY(3);
+}
+
+#carusel figure:nth-child(2) .reflection {
+  background-image: url(../SCSS-3d-carusel/img/sl2.jpg);
+}
+
+#carusel figure:nth-child(2) .reflection::before {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  background-image: linear-gradient(black, transparent);
+}
+
+#carusel figure:nth-child(3) {
+  -webkit-transform: rotateX(-45deg) rotateY(216deg) scaleY(3);
+          transform: rotateX(-45deg) rotateY(216deg) scaleY(3);
+}
+
+#carusel figure:nth-child(3) .reflection {
+  background-image: url(../SCSS-3d-carusel/img/sl3.jpg);
+}
+
+#carusel figure:nth-child(3) .reflection::before {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  background-image: linear-gradient(black, transparent);
+}
+
+#carusel figure:nth-child(4) {
+  -webkit-transform: rotateX(-45deg) rotateY(288deg) scaleY(3);
+          transform: rotateX(-45deg) rotateY(288deg) scaleY(3);
+}
+
+#carusel figure:nth-child(4) .reflection {
+  background-image: url(../SCSS-3d-carusel/img/sl4.jpg);
+}
+
+#carusel figure:nth-child(4) .reflection::before {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  background-image: linear-gradient(black, transparent);
+}
+
+#carusel figure:nth-child(5) {
+  -webkit-transform: rotateX(-45deg) rotateY(360deg) scaleY(3);
+          transform: rotateX(-45deg) rotateY(360deg) scaleY(3);
+}
+
+#carusel figure:nth-child(5) .reflection {
+  background-image: url(../SCSS-3d-carusel/img/sl5.jpg);
+}
+
+#carusel figure:nth-child(5) .reflection::before {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  background-image: linear-gradient(black, transparent);
+}
+
+#carusel figure img {
+  -webkit-transform: rotateY(70deg);
+          transform: rotateY(70deg);
+}
+
+#carusel figure .reflection {
+  width: 500px;
+  height: 300px;
+  -webkit-transform: rotateY(70deg) scaleY(-1);
+          transform: rotateY(70deg) scaleY(-1);
+}
+
+#carusel figure h2 {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

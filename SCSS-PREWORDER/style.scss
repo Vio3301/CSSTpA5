@@ -1,0 +1,80 @@
+$color-dark: #333;
+$color-light:green;
+$size:200px;
+
+@mixin abs-center{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+body{
+background-color: $color-dark;
+}
+#prelow{
+    background-color: darken($color-dark,7%);
+    width: $size;
+    height: $size;
+    @include abs-center;
+
+    div{
+        width: $size / 5 - 4px;
+        height: $size / 5 - 4px;
+        background-color: $color-light;
+        border: 2px solid lighten($color-light,10%);
+        float: left;
+        @for $n from 1 through 25{
+         &:nth-child(#{$n}){
+             animation: border_animation 100/random(1000) * 1s + 0.2s infinite;
+         }
+        }
+         @keyframes border_animation {
+             0%{ border-top-color:lighten($color-dark,30%);
+                border-right-color:transparent;
+                border-bottom-color:transparent;
+                border-left-color:transparent;
+                background-color: transparent;
+                 
+            }
+             25%{ border-top-color:transparent;
+                border-right-color:lighten($color-dark,30%);
+                border-bottom-color:transparent;
+                border-left-color:transparent;
+                background-color: $color-light;
+                
+            }
+
+             50%{  border-top-color:transparent;
+                border-right-color:transparent;
+                border-bottom-color:lighten($color-dark,30%);
+                border-left-color:transparent;
+                background-color: transparent;
+            }
+
+             75%{ border-top-color:transparent;
+                border-right-color:transparent;
+                border-bottom-color:transparent;
+                border-left-color:lighten($color-dark,30%);
+                background-color: $color-light;
+            }
+
+             100%{border-top-color:lighten($color-dark,30%);
+                border-right-color:transparent;
+                border-bottom-color:transparent;
+                border-left-color:transparent;
+                background-color: transparent;
+                
+            }
+             
+             
+         }
+
+    }
+
+}
+

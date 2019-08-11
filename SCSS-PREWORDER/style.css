@@ -1,0 +1,225 @@
+body {
+  background-color: #333;
+}
+
+#prelow {
+  background-color: #212121;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+#prelow div {
+  width: 36px;
+  height: 36px;
+  background-color: green;
+  border: 2px solid #00b300;
+  float: left;
+}
+
+#prelow div:nth-child(1) {
+  -webkit-animation: border_animation 0.94627s infinite;
+          animation: border_animation 0.94627s infinite;
+}
+
+#prelow div:nth-child(2) {
+  -webkit-animation: border_animation 0.30288s infinite;
+          animation: border_animation 0.30288s infinite;
+}
+
+#prelow div:nth-child(3) {
+  -webkit-animation: border_animation 0.36639s infinite;
+          animation: border_animation 0.36639s infinite;
+}
+
+#prelow div:nth-child(4) {
+  -webkit-animation: border_animation 0.36313s infinite;
+          animation: border_animation 0.36313s infinite;
+}
+
+#prelow div:nth-child(5) {
+  -webkit-animation: border_animation 0.35337s infinite;
+          animation: border_animation 0.35337s infinite;
+}
+
+#prelow div:nth-child(6) {
+  -webkit-animation: border_animation 0.37422s infinite;
+          animation: border_animation 0.37422s infinite;
+}
+
+#prelow div:nth-child(7) {
+  -webkit-animation: border_animation 0.30267s infinite;
+          animation: border_animation 0.30267s infinite;
+}
+
+#prelow div:nth-child(8) {
+  -webkit-animation: border_animation 0.63103s infinite;
+          animation: border_animation 0.63103s infinite;
+}
+
+#prelow div:nth-child(9) {
+  -webkit-animation: border_animation 0.50581s infinite;
+          animation: border_animation 0.50581s infinite;
+}
+
+#prelow div:nth-child(10) {
+  -webkit-animation: border_animation 0.72632s infinite;
+          animation: border_animation 0.72632s infinite;
+}
+
+#prelow div:nth-child(11) {
+  -webkit-animation: border_animation 0.47778s infinite;
+          animation: border_animation 0.47778s infinite;
+}
+
+#prelow div:nth-child(12) {
+  -webkit-animation: border_animation 0.34184s infinite;
+          animation: border_animation 0.34184s infinite;
+}
+
+#prelow div:nth-child(13) {
+  -webkit-animation: border_animation 0.31111s infinite;
+          animation: border_animation 0.31111s infinite;
+}
+
+#prelow div:nth-child(14) {
+  -webkit-animation: border_animation 0.3996s infinite;
+          animation: border_animation 0.3996s infinite;
+}
+
+#prelow div:nth-child(15) {
+  -webkit-animation: border_animation 0.32804s infinite;
+          animation: border_animation 0.32804s infinite;
+}
+
+#prelow div:nth-child(16) {
+  -webkit-animation: border_animation 0.31601s infinite;
+          animation: border_animation 0.31601s infinite;
+}
+
+#prelow div:nth-child(17) {
+  -webkit-animation: border_animation 0.34514s infinite;
+          animation: border_animation 0.34514s infinite;
+}
+
+#prelow div:nth-child(18) {
+  -webkit-animation: border_animation 0.3261s infinite;
+          animation: border_animation 0.3261s infinite;
+}
+
+#prelow div:nth-child(19) {
+  -webkit-animation: border_animation 3.64828s infinite;
+          animation: border_animation 3.64828s infinite;
+}
+
+#prelow div:nth-child(20) {
+  -webkit-animation: border_animation 0.57453s infinite;
+          animation: border_animation 0.57453s infinite;
+}
+
+#prelow div:nth-child(21) {
+  -webkit-animation: border_animation 0.32658s infinite;
+          animation: border_animation 0.32658s infinite;
+}
+
+#prelow div:nth-child(22) {
+  -webkit-animation: border_animation 0.44155s infinite;
+          animation: border_animation 0.44155s infinite;
+}
+
+#prelow div:nth-child(23) {
+  -webkit-animation: border_animation 0.64248s infinite;
+          animation: border_animation 0.64248s infinite;
+}
+
+#prelow div:nth-child(24) {
+  -webkit-animation: border_animation 0.32361s infinite;
+          animation: border_animation 0.32361s infinite;
+}
+
+#prelow div:nth-child(25) {
+  -webkit-animation: border_animation 0.51348s infinite;
+          animation: border_animation 0.51348s infinite;
+}
+
+@-webkit-keyframes border_animation {
+  0% {
+    border-top-color: gray;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    background-color: transparent;
+  }
+  25% {
+    border-top-color: transparent;
+    border-right-color: gray;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    background-color: green;
+  }
+  50% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: gray;
+    border-left-color: transparent;
+    background-color: transparent;
+  }
+  75% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: gray;
+    background-color: green;
+  }
+  100% {
+    border-top-color: gray;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    background-color: transparent;
+  }
+}
+
+@keyframes border_animation {
+  0% {
+    border-top-color: gray;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    background-color: transparent;
+  }
+  25% {
+    border-top-color: transparent;
+    border-right-color: gray;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    background-color: green;
+  }
+  50% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: gray;
+    border-left-color: transparent;
+    background-color: transparent;
+  }
+  75% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: gray;
+    background-color: green;
+  }
+  100% {
+    border-top-color: gray;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    background-color: transparent;
+  }
+}
+/*# sourceMappingURL=style.css.map */
